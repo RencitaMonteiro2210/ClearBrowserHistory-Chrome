@@ -1,0 +1,13 @@
+﻿{
+  "Name": "grouping Site settings",
+  "Type": "Element",
+  "Id": "MKXuap6cTkafiyhiE60dIA",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/MKXuap6cTkafiyhiE60dIA",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/0RQFU62KJU-YOQcCbT6nqw",
+  "Created": "2025-01-14T09:45:53.9961826Z",
+  "Updated": "2025-01-14T09:45:53.9961826Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

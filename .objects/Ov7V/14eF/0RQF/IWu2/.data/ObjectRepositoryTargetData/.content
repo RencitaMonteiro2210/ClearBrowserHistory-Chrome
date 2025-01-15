@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f4sjS-e_Dk-KAPCx6vC0RA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/clearBrowserData" CVScreenId="5e4c8d72-4ac8-4408-8604-91b49692b1ed" DesignTimeRectangle="531, 272, 201, 36" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Time range' role='combo box' /&gt;" Guid="1d75d1be-27b4-4db1-804a-d292e5738cdb" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8096bd662284432f4ce4f50ff794e3e2.png" xmlns="">0aiERXqIcFUuTK-pfwwH8Zg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

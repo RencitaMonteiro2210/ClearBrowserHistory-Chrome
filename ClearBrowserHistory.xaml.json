@@ -1,0 +1,33 @@
+{
+  "DisplayName": "NewActivity",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_OrchestratorFolderPath",
+      "DisplayName": "in_OrchestratorFolderPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "RPA Training",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_AssetName",
+      "DisplayName": "in_AssetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "DeleteSelectedCacheSettings",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VD8PUlPfgUaSZIDSmjZLQQ" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/C5ipmovQnUK45jemWWFWxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/clearBrowserData" DesignTimeRectangle="455, 338, 16, 17" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Browsing history' role='grouping' /&gt;&lt;ctrl name='Browsing history 1 item' role='check box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Browsing history' role='grouping' /&gt;&lt;ctrl name='Browsing history 1 item' role='check box' automationid='' /&gt;" Guid="03bfb77f-5bdc-4996-b804-f59ab13e66c1" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="881752046261810185aba3b008d2c134.png" xmlns="">0QEqlnaokZ0OUSx1TeuB9Nw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

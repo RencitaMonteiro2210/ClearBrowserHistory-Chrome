@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hPKZNwhm50OgGqR_3dbJLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/clearBrowserData" DesignTimeRectangle="455, 544, 455, 41" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Passwords and other sign-in data' role='grouping' /&gt;" Guid="ce854451-0d5f-46ad-b54f-a0cabcc680a3" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f406074066224b1daee1c3f78007d14f.png" xmlns="">0DOUnCZ0e50ScZOMSEx-biA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

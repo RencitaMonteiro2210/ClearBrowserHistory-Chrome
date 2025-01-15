@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Last hour(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "IWu2wesEQEyOWPd5AhaiMw",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/IWu2wesEQEyOWPd5AhaiMw",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/0RQFU62KJU-YOQcCbT6nqw",
+  "Created": "2025-01-14T09:30:48.651084Z",
+  "Updated": "2025-01-14T09:30:48.651084Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

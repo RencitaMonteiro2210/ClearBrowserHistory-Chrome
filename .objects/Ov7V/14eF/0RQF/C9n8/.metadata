@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Chrome",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "C9n862s-Y0q_V_uaBIeYGw",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/C9n862s-Y0q_V_uaBIeYGw",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/0RQFU62KJU-YOQcCbT6nqw",
+  "Created": "2025-01-14T09:21:27.9755303Z",
+  "Updated": "2025-01-14T09:21:27.9755303Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
