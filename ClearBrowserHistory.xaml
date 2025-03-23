@@ -105,7 +105,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="716,5306" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="716,5326" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="DeleteSelectedCacheSettings" />
     </Sequence.Variables>
@@ -125,13 +125,13 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotAsset>
     <ui:LogMessage DisplayName="Log Message : Asset data is retrieved " sap:VirtualizedContainerService.HintSize="558,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Asset data is retrived from &quot; + in_AssetName]" />
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="1. Open chrome and navigate to clear browsing history tab &#xA;2. Go to advanced tab &#xA;3. Uncheck all the check box and then  check the check box that has to be cleared.&#xA;4.Click on delete data " AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab: Open Chrome " HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,4893" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="08db6335-f90a-48aa-8642-349657bf240b" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="1. Open chrome and navigate to clear browsing history tab &#xA;2. Go to advanced tab &#xA;3. Uncheck all the check box and then  check the check box that has to be cleared.&#xA;4.Click on delete data " AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab: Open Chrome " HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,4913" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="08db6335-f90a-48aa-8642-349657bf240b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,4581" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,4601" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="DataTypes" />
             </Sequence.Variables>
@@ -207,13 +207,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:FindChildren>
-            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each child , if the child is a check box then uncheck the check box else do nothing " DisplayName="For Each Data type to be uncheck " sap:VirtualizedContainerService.HintSize="490,2523" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[DataTypes]">
+            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each child , if the child is a check box then uncheck the check box else do nothing " DisplayName="For Each Data type to be uncheck " sap:VirtualizedContainerService.HintSize="490,2543" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[DataTypes]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="ui:UiElement">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:UiElement" Name="currentUiElement" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,2351" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,2371" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="currentElementDataType" />
                     </Sequence.Variables>
@@ -235,15 +235,21 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <If Condition="[currentElementDataType.tostring.Trim.ToLower.Equals(&quot;autofill form data&quot;)]" DisplayName="If : mouse scroll" sap:VirtualizedContainerService.HintSize="454,547" sap2010:WorkflowViewState.IdRef="If_4">
+                    <If Condition="[currentElementDataType.tostring.Trim.ToLower.Equals(&quot;autofill form data&quot;)]" DisplayName="If : mouse scroll" sap:VirtualizedContainerService.HintSize="454,567" sap2010:WorkflowViewState.IdRef="If_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,320" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,340" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll : down" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,260" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="1" Version="V4">
+                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll : down" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,280" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="1" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
                             <uix:NMouseScroll.SearchedElement>
                               <uix:SearchedElement>
                                 <uix:SearchedElement.Target>
@@ -254,6 +260,9 @@
                                 </uix:SearchedElement.Timeout>
                               </uix:SearchedElement>
                             </uix:NMouseScroll.SearchedElement>
+                            <uix:NMouseScroll.Target>
+                              <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" ContentHash="9sXYR5JRCEqolZWObw9SIw" DesignTimeRectangle="8, 95, 1366, 641" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;" Guid="f4c510ca-5ddd-4a04-bec2-fcdef5c209c1" InformativeScreenshot="f673ebadf25bb95d239b26e74b3f352d.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/-vcxkM1nAk6d8n8mxea1vA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                            </uix:NMouseScroll.Target>
                           </uix:NMouseScroll>
                         </Sequence>
                       </If.Then>

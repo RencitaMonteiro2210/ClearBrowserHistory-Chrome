@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9sXYR5JRCEqolZWObw9SIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/clearBrowserData" DesignTimeRectangle="8, 95, 1366, 641" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;" Guid="f4c510ca-5ddd-4a04-bec2-fcdef5c209c1" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f673ebadf25bb95d239b26e74b3f352d.png" xmlns="">0QSkU0kDfSEq_262f2XVx_g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScroll</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
