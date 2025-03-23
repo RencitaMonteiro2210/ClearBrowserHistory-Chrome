@@ -45,6 +45,7 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -104,7 +105,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="696,4548" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="716,5306" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="DeleteSelectedCacheSettings" />
     </Sequence.Variables>
@@ -113,7 +114,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Retrieve the asset that has the data types to be deleted. " AssetName="[in_AssetName]" CacheStrategy="None" DisplayName="Get Asset : Data types to be deleted " FolderPath="[in_OrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="538,217" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Retrieve the asset that has the data types to be deleted. " AssetName="[in_AssetName]" CacheStrategy="None" DisplayName="Get Asset : Data types to be deleted " FolderPath="[in_OrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="558,217" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[DeleteSelectedCacheSettings]</OutArgument>
       </ui:GetRobotAsset.Value>
@@ -123,14 +124,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotAsset>
-    <ui:LogMessage DisplayName="Log Message : Asset data is retrieved " sap:VirtualizedContainerService.HintSize="538,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Asset data is retrived from &quot; + in_AssetName]" />
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="1. Open chrome and navigate to clear browsing history tab &#xD;&#xA;2. Go to advanced tab &#xD;&#xA;3. Uncheck all the check box and then  check the check box that has to be cleared.&#xD;&#xA;4.Click on delete data " AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab: Open Chrome " HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,4135" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="08db6335-f90a-48aa-8642-349657bf240b" Version="V2">
+    <ui:LogMessage DisplayName="Log Message : Asset data is retrieved " sap:VirtualizedContainerService.HintSize="558,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Asset data is retrived from &quot; + in_AssetName]" />
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="1. Open chrome and navigate to clear browsing history tab &#xA;2. Go to advanced tab &#xA;3. Uncheck all the check box and then  check the check box that has to be cleared.&#xA;4.Click on delete data " AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab: Open Chrome " HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,4893" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="08db6335-f90a-48aa-8642-349657bf240b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="504,3823" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="524,4581" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="DataTypes" />
             </Sequence.Variables>
@@ -139,15 +140,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Press on ctrl+Shift+Del to open clear browsing history tab. " ClickBeforeMode="None" DisplayName="Keyboard Shortcuts : Open clear history tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,253" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Shortcuts="[d(hk)][d(ctrl)d(shift)][k(Del)][u(shift)u(ctrl)][u(hk)]" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" sap2010:Annotation.AnnotationText="Press on ctrl+Shift+Del to open clear browsing history tab. " ClickBeforeMode="None" DelayBefore="5" DisplayName="Keyboard Shortcuts : Open clear history tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="490,253" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Shortcuts="[d(hk)][d(ctrl)d(shift)][k(Del)][u(shift)u(ctrl)][u(hk)]" Version="V4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <ui:LogMessage DisplayName="Log Message : Clear browsing tab opened " sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot; Clear browsing data tab opened &quot;]" />
-            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Go to advanced tab " ClickType="Single" DisplayName="Click : Advanced" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,220" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+            <ui:LogMessage DisplayName="Log Message : Clear browsing tab opened " sap:VirtualizedContainerService.HintSize="490,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot; Clear browsing data tab opened &quot;]" />
+            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Go to advanced tab " ClickType="Single" DisplayName="Click : Advanced" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="490,220" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" CVScreenId="922ef883-2205-4b8e-8ba5-1c1934ba58cd" ContentHash="0gUYI3r86kGSrjEPmS5QxA" DesignTimeRectangle="676, 221, 271, 40" DesignTimeScaleFactor="1" ElementType="TabPage" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Advanced' role='page tab' /&gt;" Guid="57131c78-fb51-4197-a15c-6d7b219a0418" InformativeScreenshot="21f0aff23470614a5a961edab4ff403e.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/70qyVCKYwkiriHx2b070cA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -157,8 +158,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message : advanced tab" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot; Navigated to advanced tab&quot;]" />
-            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on the time range drop down " ClickType="Single" DisplayName="Click : drop down " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,220" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+            <ui:LogMessage DisplayName="Log Message : advanced tab" sap:VirtualizedContainerService.HintSize="490,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot; Navigated to advanced tab&quot;]" />
+            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on the time range drop down " ClickType="Single" DisplayName="Click : drop down " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="490,220" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" CVScreenId="5e4c8d72-4ac8-4408-8604-91b49692b1ed" ContentHash="f4sjS-e_Dk-KAPCx6vC0RA" DesignTimeRectangle="531, 272, 201, 36" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Time range' role='combo box' /&gt;" Guid="1d75d1be-27b4-4db1-804a-d292e5738cdb" InformativeScreenshot="8096bd662284432f4ce4f50ff794e3e2.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/IWu2wesEQEyOWPd5AhaiMw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -168,7 +169,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NSelectItem sap2010:Annotation.AnnotationText="Select on all time option from drop down " DisplayName="Select Item : All time " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,220" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="All time" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+            <uix:NSelectItem sap2010:Annotation.AnnotationText="Select on all time option from drop down " DisplayName="Select Item : All time " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="490,220" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="All time" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="6">
                   <x:String>Last hour</x:String>
@@ -188,10 +189,10 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <ui:LogMessage DisplayName="Log Message : Select all time" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Selected all time from time-range dropdown&quot;]" />
-            <ui:FindChildren sap2010:Annotation.AnnotationText="Find children of uielement " Children="[DataTypes]" DisplayName="Find Children 'grouping'" Filter="&lt;ctrl /&gt;" sap:VirtualizedContainerService.HintSize="470,170" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+            <ui:LogMessage DisplayName="Log Message : Select all time" sap:VirtualizedContainerService.HintSize="490,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Selected all time from time-range dropdown&quot;]" />
+            <ui:FindChildren sap2010:Annotation.AnnotationText="Find children of uielement " Children="[DataTypes]" DisplayName="Find Children  : Data types" Filter="&lt;ctrl /&gt;" sap:VirtualizedContainerService.HintSize="490,170" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
               <ui:FindChildren.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13696e12-28b4-43a5-9d21-15e0bc67d462" InformativeScreenshot="6432a1c30c0012b184e069d013e74f27" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13696e12-28b4-43a5-9d21-15e0bc67d462" InformativeScreenshot="f66a8304792521e8e303a1a30cf5162d" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -206,24 +207,24 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:FindChildren>
-            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each child , if the child is a check box then uncheck the check box else do nothing " DisplayName="For Each Data type to be uncheck " sap:VirtualizedContainerService.HintSize="470,1003" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[DataTypes]">
+            <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each child , if the child is a check box then uncheck the check box else do nothing " DisplayName="For Each Data type to be uncheck " sap:VirtualizedContainerService.HintSize="490,2523" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[DataTypes]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="ui:UiElement">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:UiElement" Name="currentUiElement" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,831" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="488,2351" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="DataType" />
+                      <Variable x:TypeArguments="x:String" Name="currentElementDataType" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap2010:Annotation.AnnotationText="Get name of child " DisplayName="Assign : Datatype" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap2010:Annotation.AnnotationText="Get name of child " DisplayName="Assign : Datatype" sap:VirtualizedContainerService.HintSize="454,145" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[DataType]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[currentElementDataType]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
                         <InArgument x:TypeArguments="x:String">[currentUiElement.Get("name").ToString]</InArgument>
@@ -234,34 +235,92 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <If Condition="[DataType.Equals(&quot;Time range&quot;)]" DisplayName="If : Check datatype" sap:VirtualizedContainerService.HintSize="434,626" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[currentElementDataType.tostring.Trim.ToLower.Equals(&quot;autofill form data&quot;)]" DisplayName="If : mouse scroll" sap:VirtualizedContainerService.HintSize="454,547" sap2010:WorkflowViewState.IdRef="If_4">
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,320" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message : Time range " sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[DataType]" />
+                          <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll : down" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,260" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="1" Version="V4">
+                            <uix:NMouseScroll.SearchedElement>
+                              <uix:SearchedElement>
+                                <uix:SearchedElement.Target>
+                                  <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" ContentHash="nGmNPwY_GEGiKSx17b8iuw" DesignTimeRectangle="455, 540, 457, 40" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Hosted app data' role='grouping' /&gt;" Guid="ea60ddb6-1b0e-4bae-997e-956fe944f29a" InformativeScreenshot="11b479f7b334c25d44dcd2173828a71f.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/nBCIxS0AaUGgKDpplwYM3Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                </uix:SearchedElement.Target>
+                                <uix:SearchedElement.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:SearchedElement.Timeout>
+                              </uix:SearchedElement>
+                            </uix:NMouseScroll.SearchedElement>
+                          </uix:NMouseScroll>
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,271" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_19">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NCheck Action="Uncheck" sap2010:Annotation.AnnotationText="Uncheck all the check boxes " DisplayName="Uncheck Data types " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,211" sap2010:WorkflowViewState.IdRef="NCheck_4" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
-                            <uix:NCheck.Target>
-                              <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" DesignTimeRectangle="455, 338, 16, 17" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='&quot;+DataType+&quot;' role='grouping' /&gt;&lt;ctrl name='&quot;+DataType+&quot; *' role='check box' /&gt;&quot;]" Guid="03bfb77f-5bdc-4996-b804-f59ab13e66c1" ImageBase64="" InformativeScreenshot="97ad61b999c1d5c20db9565745c66542.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
-                            </uix:NCheck.Target>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </uix:NCheck>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[currentElementDataType.Equals(&quot;Time range&quot;)]" DisplayName="If : Check datatype" sap:VirtualizedContainerService.HintSize="454,1599" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,226" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message : Time range " sap:VirtualizedContainerService.HintSize="418,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace" Message="[currentElementDataType]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,1244" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:Boolean" Name="currentElementIsChecked" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute : Data types" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[currentElementIsChecked]" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+                            <uix:NGetAttributeGeneric.Target>
+                              <uix:TargetAnchorable CVScreenId="089492e4-ce79-4696-8a1e-6b62d951afb1" ContentHash="6FrFwk8fsku7O8pv3xFlCQ" DesignTimeRectangle="455, 338, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='&quot;+currentElementDataType+&quot;' /&gt;&lt;ctrl name='&quot;+currentElementDataType+&quot; *' text='*checked' /&gt;&quot;]" Guid="dc03fedb-ebd8-422b-a9d3-ce364e8f78f6" ImageBase64="" InformativeScreenshot="4371228819af7b8073bbd933613cf47d.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/AM_HyrCOI0GupC2LWgkxGw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                            </uix:NGetAttributeGeneric.Target>
+                          </uix:NGetAttributeGeneric>
+                          <ui:LogMessage DisplayName="Log Message : current data type is checked/unchecked" sap:VirtualizedContainerService.HintSize="418,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[currentElementDataType + &quot; - &quot; + currentElementIsChecked.ToString]" />
+                          <If Condition="[((DeleteSelectedCacheSettings.Split(&quot;;&quot;).ToList).Contains(currentElementDataType) andalso currentElementIsChecked) orelse ( (not ((DeleteSelectedCacheSettings.Split(&quot;;&quot;).ToList).Contains(currentElementDataType))) andalso ( not currentElementIsChecked))]" DisplayName="If : Checking if data type has to be cleared or no " sap:VirtualizedContainerService.HintSize="418,770" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LogMessage DisplayName="Log Message : Data type is checked/unchecked.." sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[If(DeleteSelectedCacheSettings.Split(&quot;;&quot;c).ToList().Contains(currentElementDataType), &quot;The current data type - &quot; &amp; currentElementDataType &amp; &quot; is checked&quot;, &quot;The current data type - &quot; &amp; currentElementDataType &amp; &quot; is unchecked&quot;)]" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,415" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click : data type" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="history" CVScreenId="807e97ed-1dac-433f-97c1-dd44779b7004" ContentHash="wyIe3xz9Z0q3HH1KZgjqxw" DesignTimeRectangle="455, 352, 457, 40" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='&quot;+currentElementDataType+&quot;*' /&gt;&quot;]" Guid="07252c31-6520-4a5e-9e88-5be2bf30b27f" InformativeScreenshot="d89b1714fdb8d540a3de39e0109a839b.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/j2QiUHJbgky4U072LTdtgw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <ui:LogMessage DisplayName="Log Message : Data type is checked/unchecked " sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[If(DeleteSelectedCacheSettings.Split(&quot;;&quot;c).ToList().Contains(currentElementDataType), &quot;The current data type - &quot; &amp; currentElementDataType &amp; &quot; is checked&quot;, &quot;The current data type - &quot; &amp; currentElementDataType &amp; &quot; is unchecked&quot;)]" />
+                              </Sequence>
+                            </If.Else>
+                          </If>
                         </Sequence>
                       </If.Else>
                     </If>
@@ -271,40 +330,12 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:ForEach>
-            <ui:LogMessage DisplayName="Log Message : Uncheck" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;All data types are unchecked&quot;]" />
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each data type mentioned in the asset, check the check box in order to clear that data  " DisplayName="For Each Data type to be check " sap:VirtualizedContainerService.HintSize="470,412" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[DeleteSelectedCacheSettings.Split(&quot;;&quot;).ToList]">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="x:String">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheck Action="Check" DisplayName="Check data types" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
-                      <uix:NCheck.Target>
-                        <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" DesignTimeRectangle="455, 338, 16, 17" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='&quot;+currentText+&quot;' role='grouping' /&gt;&lt;ctrl name='&quot;+currentText+&quot; *' role='check box' /&gt;&quot;]" Guid="03bfb77f-5bdc-4996-b804-f59ab13e66c1" ImageBase64="" InformativeScreenshot="97ad61b999c1d5c20db9565745c66542.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
-                      </uix:NCheck.Target>
-                    </uix:NCheck>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
-            <ui:LogMessage DisplayName="Log Message : Check" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;The data types to be cleared is checked &quot;]" />
-            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on delete data" ClickType="Single" DisplayName="Click : Delete data" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="470,220" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
+            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on delete data" ClickType="Single" DisplayName="Click : Delete data" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="490,220" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="08db6335-f90a-48aa-8642-349657bf240b" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="settings/clearBrowserData" CVScreenId="033b7170-2871-4bf2-8f64-ba8423be229d" ContentHash="oIAO8OPTuEe8j7VlzWXIAA" DesignTimeRectangle="831, 601, 100, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='Delete data' role='push button' /&gt;" Guid="29553269-725a-41ef-941c-73929b5f3a37" InformativeScreenshot="b1006929b7ac97cb713278c2ea9eaa5e.png" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/r-faa5iRhUymOfzRYYyXtw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -320,7 +351,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message : Delete " sap:VirtualizedContainerService.HintSize="470,168" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot; Browsing history is cleared&quot;]" />
+            <ui:LogMessage DisplayName="Log Message : Delete " sap:VirtualizedContainerService.HintSize="490,168" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot; Browsing history is cleared&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

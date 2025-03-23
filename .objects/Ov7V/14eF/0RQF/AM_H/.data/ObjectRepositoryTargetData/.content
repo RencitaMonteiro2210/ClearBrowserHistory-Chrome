@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6FrFwk8fsku7O8pv3xFlCQ" Reference="Y0PVJOvwVUSXBOGjXaAdxQ/AM_HyrCOI0GupC2LWgkxGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="089492e4-ce79-4696-8a1e-6b62d951afb1" DesignTimeRectangle="455, 338, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="[&quot;&lt;ctrl name='Settings – Privacy and security' role='document' /&gt;&lt;ctrl name='&quot;+currentElementDataType+&quot;' /&gt;&lt;ctrl name='&quot;+currentElementDataType+&quot; *' text='*checked' /&gt;&quot;]" Guid="dc03fedb-ebd8-422b-a9d3-ce364e8f78f6" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4371228819af7b8073bbd933613cf47d.png" xmlns="">0Z3X8MqXvmECGIjiYANIQqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

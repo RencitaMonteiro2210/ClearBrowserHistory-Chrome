@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Settings – Privacy and security",
+  "Type": "Screen",
+  "Id": "-Cz7bGrIP0upJJa78JaCMA",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/-Cz7bGrIP0upJJa78JaCMA",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/sVpgE9cUxEOIG_tyqEw52g",
+  "Created": "2025-03-23T06:43:14.7003147Z",
+  "Updated": "2025-03-23T06:43:14.7003147Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

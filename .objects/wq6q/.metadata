@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Settings – Privacy and security",
+  "Type": "App",
+  "Id": "wq6q7sLPcky_zs3upZNPSg",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/wq6q7sLPcky_zs3upZNPSg",
+  "Created": "2025-03-23T06:43:14.524034Z",
+  "Updated": "2025-03-23T06:43:14.524034Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

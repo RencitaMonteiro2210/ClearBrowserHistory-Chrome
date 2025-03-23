@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Icon 'Checkbox'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "U9xZoPZ-5kK6Rn5VPw0wfg",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/U9xZoPZ-5kK6Rn5VPw0wfg",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/szK3jtgnFESS_pxYURG2wA",
+  "Created": "2025-03-23T06:51:44.5242979Z",
+  "Updated": "2025-03-23T06:51:44.5242979Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

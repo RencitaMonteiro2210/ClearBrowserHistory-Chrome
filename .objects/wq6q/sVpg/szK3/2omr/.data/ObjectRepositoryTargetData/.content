@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oiYEfaK_ZU-l7d_8q5Folg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/clearBrowserData" DesignTimeRectangle="455, 578, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;ctrl name='Autofill form data None' role='check box' /&gt;" Guid="f0ec3bed-e48c-4638-baad-10a6c8ff90fc" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Settings – Privacy and security - Google Chrome' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c82c9151b13cefec58fabd3271b37e76.png" xmlns="">0eLypi0rWw0Cvn0sGz4fGlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

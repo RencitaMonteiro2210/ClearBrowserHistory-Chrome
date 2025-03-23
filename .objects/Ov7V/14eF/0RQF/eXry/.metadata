@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Uncheck Data types ",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "eXryYJ6TjUOiEEFgdxSLuQ",
+  "Reference": "Y0PVJOvwVUSXBOGjXaAdxQ/eXryYJ6TjUOiEEFgdxSLuQ",
+  "ParentRef": "Y0PVJOvwVUSXBOGjXaAdxQ/0RQFU62KJU-YOQcCbT6nqw",
+  "Created": "2025-03-04T07:10:09.5686816Z",
+  "Updated": "2025-03-04T07:10:09.5686816Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
